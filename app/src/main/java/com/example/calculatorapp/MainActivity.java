@@ -35,7 +35,18 @@ public class MainActivity extends AppCompatActivity {
         EditText secondNumber = findViewById(R.id.secondNumber);
         Button add =  findViewById(R.id.addButton);
         TextView result = findViewById(R.id.result);
-        
+
+
+
+        add.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                int i = Integer.parseInt(firstNumber.getText().toString());
+                int j = Integer.parseInt(secondNumber.getText().toString());
+                int sum = i + j;
+                result.setText(String.valueOf(sum));
+            }
+        });
     }
 
 }
