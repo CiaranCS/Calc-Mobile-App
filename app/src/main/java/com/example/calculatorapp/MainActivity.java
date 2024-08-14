@@ -45,9 +45,9 @@ public class MainActivity extends AppCompatActivity {
         add.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                int i = Integer.parseInt(firstNumber.getText().toString());
-                int j = Integer.parseInt(secondNumber.getText().toString());
-                int sum = i + j;
+                double i = Double.parseDouble(firstNumber.getText().toString());
+                double j = Double.parseDouble(secondNumber.getText().toString());
+                double sum = i + j;
                 result.setText(String.valueOf(sum));
             }
         });
@@ -56,9 +56,9 @@ public class MainActivity extends AppCompatActivity {
         subtract.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                int i = Integer.parseInt(firstNumber.getText().toString());
-                int j = Integer.parseInt(secondNumber.getText().toString());
-                int sum = i - j;
+                double i = Double.parseDouble(firstNumber.getText().toString());
+                double j = Double.parseDouble(secondNumber.getText().toString());
+                double sum = i - j;
                 result.setText(String.valueOf(sum));
             }
         });
@@ -66,9 +66,9 @@ public class MainActivity extends AppCompatActivity {
         multiply.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                int i = Integer.parseInt(firstNumber.getText().toString());
-                int j = Integer.parseInt(secondNumber.getText().toString());
-                int sum = i * j;
+                double i = Double.parseDouble(firstNumber.getText().toString());
+                double j = Double.parseDouble(secondNumber.getText().toString());
+                double sum = i * j;
                 result.setText(String.valueOf(sum));
             }
         });
@@ -76,9 +76,9 @@ public class MainActivity extends AppCompatActivity {
         divide.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                int i = Integer.parseInt(firstNumber.getText().toString());
-                int j = Integer.parseInt(secondNumber.getText().toString());
-                int sum = i / j;
+                double i = Double.parseDouble(firstNumber.getText().toString());
+                double j = Double.parseDouble(secondNumber.getText().toString());
+                double sum = i / j;
                 result.setText(String.valueOf(sum));
             }
         });
