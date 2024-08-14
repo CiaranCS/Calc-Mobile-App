@@ -98,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
                 case "divide":
                     if (j == 0) {
                         secondNumber.setText("");
-                        secondNumber.setHint("Please enter a new value.");
+                        secondNumber.setHint("Enter new value.");
                         Toast.makeText(view.getContext(), "Cannot equal 0. Please enter a new value.", Toast.LENGTH_SHORT).show();
                         return;
                     }
@@ -109,21 +109,21 @@ public class MainActivity extends AppCompatActivity {
             result.setText(String.valueOf(sum));
         } catch (NumberFormatException e) {
             secondNumber.setText("");
-            secondNumber.setHint("Please enter a new value.");
+            secondNumber.setHint("Enter new value.");
             firstNumber.setText("");
-            firstNumber.setHint("Please enter a new value.");
+            firstNumber.setHint("Enter new value.");
             Toast.makeText(view.getContext(), "Invalid input. Please enter numeric values.", Toast.LENGTH_SHORT).show();
         } catch (ArithmeticException e) {
             secondNumber.setText("");
-            secondNumber.setHint("Please enter a new value.");
+            secondNumber.setHint("Enter new value.");
             firstNumber.setText("");
-            firstNumber.setHint("Please enter a new value.");
+            firstNumber.setHint("Enter new value.");
             Toast.makeText(view.getContext(), "Arithmetic error. Please check your inputs.", Toast.LENGTH_SHORT).show();
         } catch (Exception e) {
             secondNumber.setText("");
-            secondNumber.setHint("Please enter a new value.");
+            secondNumber.setHint("Enter new value.");
             firstNumber.setText("");
-            firstNumber.setHint("Please enter a new value.");
+            firstNumber.setHint("Enter new value.");
             Toast.makeText(view.getContext(), "An unexpected error occurred.", Toast.LENGTH_SHORT).show();
         }
     }
