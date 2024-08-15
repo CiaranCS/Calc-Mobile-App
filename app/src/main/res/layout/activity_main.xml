@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@color/blue_purple">
+    android:background="@color/tiffanyblue">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -16,7 +16,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.333"
-        android:background="@color/light_blue">
+        android:background="@color/tiffanyblue">
 
         <LinearLayout
             android:id="@+id/linerlayout"
@@ -27,7 +27,8 @@
             android:padding="10dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@color/tiffanyblue">
 
             <EditText
                 android:id="@+id/firstNumber"
@@ -48,6 +49,7 @@
                 android:hint="Enter Number"
                 android:inputType="text"
                 android:textAlignment="center" />
+
         </LinearLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -80,13 +82,13 @@
                 android:orientation="vertical"
                 app:layout_constraintGuide_percent=".75" />
 
-
             <Button
                 android:id="@+id/addButton"
-                android:layout_width="71dp"
-                android:layout_height="47dp"
-                android:background="@drawable/round_button"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
                 android:text="+"
+                android:textColor="@color/bluegrey"
+                android:background="@drawable/round_button"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@+id/guidline1"
                 app:layout_constraintStart_toStartOf="parent"
@@ -94,10 +96,11 @@
 
             <Button
                 android:id="@+id/subtractButton"
-                android:layout_width="71dp"
-                android:layout_height="47dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
                 android:background="@drawable/round_button"
                 android:text="-"
+                android:textColor="@color/bluegrey"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@+id/guidline2"
                 app:layout_constraintStart_toStartOf="@+id/guidline1"
@@ -105,10 +108,11 @@
 
             <Button
                 android:id="@+id/multiplyButton"
-                android:layout_width="71dp"
-                android:layout_height="47dp"
-                android:background="@drawable/round_button"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
                 android:text="x"
+                android:textColor="@color/bluegrey"
+                android:background="@drawable/round_button"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@+id/guidline3"
                 app:layout_constraintStart_toStartOf="@+id/guidline2"
@@ -116,10 +120,11 @@
 
             <Button
                 android:id="@+id/divideButton"
-                android:layout_width="71dp"
-                android:layout_height="47dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
                 android:background="@drawable/round_button"
                 android:text="/"
+                android:textColor="@color/bluegrey"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="@+id/guidline3"
@@ -132,7 +137,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
-
             android:hint="Result"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -168,32 +172,32 @@
         <ImageView
             android:layout_width="71dp"
             android:layout_height="47dp"
-            android:src="@drawable/Home"
+            android:src="@drawable/homeicon"
             android:text="+"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/guidline4"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toTopOf="parent"/>
 
         <ImageView
             android:layout_width="71dp"
             android:layout_height="47dp"
-            android:src="@drawable/Account"
+            android:src="@drawable/accounticon"
             android:text="+"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@id/guidline5"
             app:layout_constraintStart_toStartOf="@id/guidline4"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toTopOf="parent"/>
 
         <ImageView
             android:layout_width="71dp"
             android:layout_height="47dp"
-            android:src="@drawable/Back"
+            android:src="@drawable/backicon"
             android:text="+"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@id/guidline5"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toTopOf="parent"/>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
