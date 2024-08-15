@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/blue_purple">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -14,7 +15,8 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.333">
+        app:layout_constraintVertical_bias="0.333"
+        android:background="@color/light_blue">
 
         <LinearLayout
             android:id="@+id/linerlayout"
@@ -83,17 +85,18 @@
                 android:id="@+id/addButton"
                 android:layout_width="71dp"
                 android:layout_height="47dp"
+                android:background="@drawable/round_button"
                 android:text="+"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@+id/guidline1"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
-
-
+            
             <Button
                 android:id="@+id/subtractButton"
                 android:layout_width="71dp"
                 android:layout_height="47dp"
+                android:background="@drawable/round_button"
                 android:text="-"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@+id/guidline2"
@@ -104,6 +107,7 @@
                 android:id="@+id/multiplyButton"
                 android:layout_width="71dp"
                 android:layout_height="47dp"
+                android:background="@drawable/round_button"
                 android:text="x"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@+id/guidline3"
@@ -114,6 +118,7 @@
                 android:id="@+id/divideButton"
                 android:layout_width="71dp"
                 android:layout_height="47dp"
+                android:background="@drawable/round_button"
                 android:text="/"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -127,11 +132,68 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
+
             android:hint="Result"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/constraintLayout1" />
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout1"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="681dp">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidline4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="275dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidline5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.66" />
+
+        <ImageView
+            android:layout_width="71dp"
+            android:layout_height="47dp"
+            android:src="@drawable/Home"
+            android:text="+"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/guidline4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/test1"
+            android:layout_width="71dp"
+            android:layout_height="47dp"
+            android:background="@drawable/round_button"
+            android:text="+"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/guidline5"
+            app:layout_constraintStart_toStartOf="@id/guidline4"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/test2"
+            android:layout_width="71dp"
+            android:layout_height="47dp"
+            android:background="@drawable/round_button"
+            android:text="+"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/guidline5"
+            app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
